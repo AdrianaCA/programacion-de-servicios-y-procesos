@@ -1,0 +1,36 @@
+package ejercicios;
+
+import java.util.Scanner;
+
+public class Ejercicio2 {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int opcion;
+		String mensaje;
+		
+		do {
+			System.out.println("Menú:");
+			System.out.println("1.Crear hilo que extienda Thread");
+			System.out.println("2.Crear hilo que implemente Runnable");
+			System.out.println("3.Crear dos hilos de cada tipo");
+			System.out.println("0.Salir");
+			
+			System.out.println("Introduzca una opcion:");
+			opcion = sc.nextInt();
+			sc.nextLine();
+			
+			if(opcion !=  0) {
+				System.out.println("Introduzca un mensaje:");
+				mensaje = sc.nextLine();
+				
+				if(opcion == 1) {
+					HiloT ht =  new HiloT(mensaje);
+					ht.start();
+				}
+			}
+		} while(opcion != 0);
+	}
+
+}

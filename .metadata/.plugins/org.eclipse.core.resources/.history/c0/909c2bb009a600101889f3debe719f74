@@ -1,0 +1,11 @@
+package ejercicios;
+
+public class HiloT extends Thread {
+	
+	private String mensaje;
+	
+	public HiloT(String mensaje) {
+		this.mensaje = mensaje;
+	}
+
+}

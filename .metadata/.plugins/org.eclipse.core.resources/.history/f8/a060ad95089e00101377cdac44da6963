@@ -1,0 +1,12 @@
+package poo;
+
+public class Moto {
+	
+	static String descripcion;
+	String color;
+	
+	public void pintar(String color) {
+		this.color = color;
+	}
+
+}
